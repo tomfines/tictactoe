@@ -1,7 +1,0 @@
-version: "3.8"
-
-services:
-  rt_calculator:
-    image: ehsanhm/rt_calc:v2
-    ports:
-      - "3000:3000"
