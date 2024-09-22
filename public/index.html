@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class='input_div'>
+        <input class= 'input input_box' id="input-box" type="text" readonly>
+    </div>
+    <div>
+        <input id="result-box" type="text" value="0" readonly>
+    </div>
+
+    <div >
+        <button class="extra-buttons" onclick=clean()> C </button>
+        <button class="extra-buttons" onclick=modulus()> % </button>
+        <button class="extra-buttons" onclick=backspace()> Del </button>
+        <button class="extra-buttons" onclick=divide()> &divide </button>
+    </div>
+
+    <div>
+        <button onclick=number(7)> 7 </button>
+        <button onclick=number(8)> 8 </button>
+        <button onclick=number(9)> 9 </button>
+        <button class="extra-buttons" onclick=multiply()> &times </button>
+    </div>
+
+    <div>
+        <button onclick=number(4)> 4 </button>
+        <button onclick=number(5)> 5 </button>
+        <button onclick=number(6)> 6 </button>
+        <button class="extra-buttons" onclick=subtract()> - </button>
+    </div>
+
+    <div>
+        <button onclick=number(1)> 1 </button>
+        <button onclick=number(2)> 2 </button>
+        <button onclick=number(3)> 3 </button>
+        <button class="extra-buttons" onclick=add()> + </button>
+    </div>
+
+    <div>
+        <button class="extra-buttons" onclick=negate()> +/- </button>
+        <button onclick=number(0)> 0 </button>
+        <button class="extra-buttons" onclick=decimal()> . </button>
+        <button class="extra-buttons" onclick=equal()> = </button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
